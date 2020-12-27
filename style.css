@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    
+
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+
+    background-image: url("img/background.jpg");
+    z-index: -1;
+    filter: blur(2px);
+
+}
+
+body::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(45deg, #00ff80, #f7030fc5, #b420a8ef);
+    /*background: linear-gradient(45deg, rgba(228, 35, 35, 0.411), rgba(216, 213, 27, 0.856)), url("img/background.jpg");*/
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(241, 225, 225);
+    font-size: 1.32rem;
+    font-weight: 500;
+
+}
+
+#header,
+.list-header {
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-link {
+    transition: color 0.5s ease;
+}
+
+.header-link:hover {
+    color: rgb(179, 176, 166);
+}
+
+.list-header li,
+input {
+    margin: 25px 30px;
+}
+
+.search-input {
+    border-radius: 20px;
+    border: 1px solid black;
+    outline: 0;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.left {
+    margin-left: -100px;
+}
+
+.right {
+    margin-right: -200px;
+}
+
+#main-content {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 100px;
+
+    font-family: 'Andika New Basic', sans-serif;
+    color: rgb(236, 234, 234);
+}
+
+#about-names {
+    margin-top: -40px;
+}
+
+#info {
+    width: 30vw;
+    margin-left: -300px;
+    margin-top: -50px;
+}
+
+#info h2::first-letter {
+    font-size: 5rem;
+    color: rgba(231, 231, 231, 0.959);
+    font-family: 'Euphoria Script', cursive;
+
+}
+
+#info .first {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#background-character {
+    position: relative;
+}
+
+#background-character img {
+    width: 400px;
+    margin-top: -210px;
+}
+
+#aside-menu {
+    position: absolute;
+    right: 50px;
+    margin-top: 50px;
+}
+
+.about-list {
+    font-size: 1.2rem;
+}
+
+.hover-effect {
+    
+}
+
+.hover-effect::before {
+    content: '';
+    background-color: white;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 2.5rem;
+}
